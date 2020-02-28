@@ -1,0 +1,201 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	background-color: #f4effc;
+	font-family: 'Nunito', sans-serif;
+}
+
+/* Top bar */
+.navbar {
+	background-color: #67568c;
+}
+
+.navbar span {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 0.5% 0%;
+	margin-right: 1%;
+}
+
+/* Heading */
+.heading h1 {
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	color: #1f1235;
+	padding-top: 40px;
+}
+
+.heading p {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	color: #67568c;
+	padding: 15px 0;
+}
+
+/* Buttons section */
+.elements {
+	max-width: 1050px !important;
+}
+
+.elem_button {
+	max-width: 510px;
+	height: 240px;
+	transition: background-color .4s;
+	border-radius: 5px;
+	background-color: #e2daeb;
+	color: #1f1235;
+	cursor: default;
+}
+
+.elem_button_active {
+	transition: box-shadow .3s, background-color .4s;
+	cursor: pointer;
+}
+
+.elem_button_active:hover {
+	box-shadow: 0 0 16px rgba(33, 33, 33, .2);
+}
+
+.button_selected {
+	background-color: #67568c !important;
+	color: #ffffff !important;
+}
+
+#button_HTML,
+#button_CSS {
+	margin-bottom: 15px;
+}
+
+#button_JavaScript,
+#button_Frontend {
+	margin: 15px 0;
+}
+
+.elem_box {
+	max-width: 475px;
+	padding: 5% 5%;
+	padding-bottom: 0;
+	margin-top: 20px;
+}
+
+.elements img {
+	margin-bottom: 15px;
+}
+
+.elem_heading {
+	font-size: 36px;
+	font-weight: bold;
+	display: inline-block;
+	padding-left: 3%;
+	margin-bottom: 0;
+}
+
+.elem_body {
+	font-size: 18px;
+}
+
+/* Continue Button */
+#button_continue {
+	font-size: 18px;
+	font-weight: bold;
+	transition: box-shadow .3s, background-color .4s, transform .2s;
+	color: rgba(31, 18, 53, 0.4);
+	background: rgba(255, 255, 255, 0.4);
+	padding: 15px 0;
+	margin-top: 15px;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.button_continue_active {
+	background-color: #ff6e6c !important;
+	color: #1f1235 !important;
+	cursor: pointer !important;
+}
+
+.button_continue_active:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+}
+
+.button_continue_active:active {
+	transform: scale(0.98) translateY(3px);
+}
+
+.button_continue_sent {
+	background-color: rgba(226, 218, 235, 0.4) !important;
+}
+
+/* Mobile version */
+@media (max-width: 576px) {
+	html,
+	body {
+		height: 1050px;
+	}
+
+	/* Top bar */
+	.navbar {
+		height: 6%;
+	}
+
+	.navbar span {
+		margin-top: 5px;
+	}
+
+	/* Heading */
+	.heading {
+		padding-top: 25px;
+		max-width: 80% !important;
+	}
+
+	.heading div {
+		padding-left: 0;
+	}
+
+	.heading h1 {
+		font-size: 39px;
+		text-align: left !important;
+	}
+
+	.heading p {
+		font-size: 18px;
+		text-align: left !important;
+	}
+
+	/* Buttons section */
+	.elements {
+		max-width: 80% !important;
+		margin: 0 auto !important;
+	}
+
+	.elem_button {
+		max-height: 120px !important;
+		margin: 5% 0 !important;
+	}
+
+	img {
+		max-width: 60px;
+		max-height: 60px;
+		margin-bottom: 5px !important;
+	}
+
+	.elem_box {
+		margin-top: 10px;
+	}
+
+	.elem_heading {
+		font-size: 25px;
+	}
+
+	/* Continue button */
+	#button_continue {
+		margin-top: 25px !important;
+		padding: 20px 0 !important;
+	}
+}
